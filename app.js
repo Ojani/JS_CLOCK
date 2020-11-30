@@ -22,8 +22,8 @@ function countTime() {
     const date = new Date();
 
     const hours = date.getHours() % 12 || 12;
-    const minutes = date.getMinutes() + 1;
-    const seconds = date.getSeconds() + 1;
+    const minutes = date.getMinutes();
+    const seconds = date.getSeconds();
 
     const hrPos = 360 / 12 * hours;
     const minPos = 360 / 60 * minutes;
