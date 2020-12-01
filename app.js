@@ -40,3 +40,9 @@ function countTime() {
 }
 
 getTime();
+
+// Resizing 
+const clock = document.querySelector(".clock");
+window.addEventListener("resize", () => {
+        clock.style.fontSize = window.innerHeight > window.innerWidth? "1.8vw" : "1vw";
+});
